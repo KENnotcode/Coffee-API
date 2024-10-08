@@ -9,7 +9,7 @@ const app = express();
 // CORS configuration
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://github.com/KENnotcode/DailyRoast'], // Allow requests from both origins
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://github.com/KENnotcode/DailyRoast'], // Allow requests from both origins
     methods: ['GET', 'POST'], // Correct allowed methods
     credentials: true, // Allow credentials (optional)
 }));
